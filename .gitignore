@@ -1,0 +1,19 @@
+# This checkout contains a private local workspace and public-safe source files.
+.DS_Store
+/.codex/
+/.local/
+/WG03 Mac Setting 2026-10-09/
+# Credentials, personal configuration, history, and packet captures
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pcap
+*.pcapng
+*.bundle
+config.toml
+# Regenerable dependencies and caches
+node_modules/
+.venv/
+__pycache__/
