@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "computer-use-mcp",
+  "version": "0.1.0",
+  "description": "A local macOS MCP launcher for the installed Computer Use engine, with connection checks and scoped UI workflow instructions.",
+  "author": {"name": "Cafe Kurumi Lyco"},
+  "keywords": ["computer-use", "mcp", "macos", "local", "accessibility"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Computer-use MCP",
+        "shortDescription": "このMacのアプリを操作",
+        "longDescription": "このMacにインストール済みのComputer UseエンジンをSTDIO MCPとして起動するローカルプラグインです。画面とアクセシビリティ情報の取得、クリック、文字入力、キー入力、スクロールなどを提供します。別途Computer Useのインストールと、対象アプリへのアクセス許可が必要です。OpenAIの公式プラグインではありません。",
+        "developerName": "Cafe Kurumi Lyco",
+        "category": "Productivity",
+        "logo": "./assets/icon.svg",
+        "composerIcon": "./assets/icon.svg",
+        "defaultPrompt": "このMacの操作対象と目的を確認し、Computer-use MCPでアプリの状態を読み取ってください。"
+      }
+    }
+  }
+}
